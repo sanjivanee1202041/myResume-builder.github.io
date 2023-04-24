@@ -4,7 +4,7 @@ session_start();
 
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 {
-    header("location: login.php");
+    header("location: index.php");
 }
 
 
@@ -23,7 +23,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 
     <title>Resume Builder Website</title>
   </head>
-<body style="background-image: url('my3img.jpg');">
+<body style="background-image: url('img/my3img.jpg');">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Resume Builder Website</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
         <a class="nav-link" href="register.php">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.php">Login</a>
+        <a class="nav-link" href="index.php">Login</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="logout.php">Logout</a>
@@ -75,7 +75,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
 
     <title>Resume Generator</title>
   </head>
@@ -86,7 +86,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
     <h1 class="text-center my-2" style="color:brown;font-size:30px;">  All of which can be customized to your liking.</h1>
     <h1 class="text-center my-2" style="color:black;font-size:30px;"> Fast and Easy to Use Our resume builder lets you easily and quickly create a resume using our resume wizard.</h1>
     <div class="container text-center my-5">
-       <a href="index.html" class=" btn btn-primary " style="width:350px ; height:80px; 
+       <a href="resume.html" class=" btn btn-primary " style="width:350px ; height:80px; 
             font-size:50px;
             text-align:center; 
             padding: 1px 1px ;
@@ -95,14 +95,14 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
         </a>
     </div>
 
-  <img src="imagemy.jpg" class="center" style="width:70% ; height:50% ;
+  <img src="img/imagemy.jpg" class="center" style="width:70% ; height:50% ;
     margin-left:auto; margin-right:auto;  display:block;">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 
 

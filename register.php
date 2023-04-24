@@ -73,7 +73,7 @@ if(empty($username_err) && empty($password_err) && empty($confirm_password_err))
         // Try to execute the query
         if (mysqli_stmt_execute($stmt))
         {
-            header("location: login.php");
+            header("location: index.php");
         }
         else{
             echo "Something went wrong... cannot redirect!";
@@ -102,7 +102,7 @@ mysqli_close($conn);
 
     <title>Resume Generator</title>
   </head>
-  <body style="background-image: url('my3img.jpg');">
+  <body style="background-image: url('img/my3img.jpg');">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Resume Builder Website</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,7 +117,7 @@ mysqli_close($conn);
             <a class="nav-link" href="register.php">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Login</a>
+            <a class="nav-link" href="index.php">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="logout.php">Logout</a>
